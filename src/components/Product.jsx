@@ -12,9 +12,10 @@ const Product = ({ product, noAction = false }) => {
 
   return (
     <div className="product">
-        <img src={product.picture} alt="" className="photo" />
+        <img lazy alt={product.name} src={product.photo} className="photo" />
         <div className="name">{product.name}</div>
         <div className="description">{ product.description }</div>
+        <div className="price">${product.price.toFixed(2)}</div>
         {!noAction &&
         <div className="actions">
           <button onClick={() => openProduct(product.id)}   className="view">view</button>
