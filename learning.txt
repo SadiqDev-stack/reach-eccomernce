@@ -1,0 +1,52 @@
+useform in react is use for form handling 
+it has three functions 
+
+handleform 
+we call this and pass our handler event on submit = () => handleForm(ourhandler())
+
+register this is use to register a form field , we use it directly inside attribute like 
+{...register("field name placeholder", {
+  // options eg
+  required: "field is required )}
+
+formState we destructure it inside the import and we receive errors 
+import { formState: { errors } } from "react-hook-forms";
+
+
+we also then use it inside  like this eg 
+{
+ errors.email ? "invalid email" : ""
+
+}
+
+
+for routing in react we use 
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+// the BrowserRouter is for wrapping all the the code 
+
+
+const app = async () => {
+
+  return 
+  <BrowserRouter >
+
+  </BrowserRouter>
+
+}
+
+// we then use the routes component inside the wrapper 
+// we use routes to declare all route or paths inside 
+// the route has path and element 
+path = the page eg /home /about etc
+element is the component to be rendered eg <home />
+
+<Routes>
+ <route path={"/home"} element={<home />} />
+ //we can declare more than one route
+
+</routes>
+
+
+if(name == "abdul"){
+  print("good morning abdul")
+}
